@@ -1,0 +1,2 @@
+sequence_id,split,lidar_path,lidar_timestamp_ns,camera_path,camera_timestamp_ns,calibration_id
+synthetic_demo,smoke,examples/synthetic_cloud.csv,0,,,
