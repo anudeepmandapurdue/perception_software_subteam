@@ -9,8 +9,12 @@ description = "Offline LiDAR obstacle detection baseline for an autonomous go-ka
 requires-python = ">=3.10"
 dependencies = []
 
+[project.optional-dependencies]
+ingestion = ["Pillow>=10,<13"]
+
 [project.scripts]
 kart-perception = "kart_perception.cli:main"
+kart-ingest = "kart_perception.ingest:main"
 
 [tool.setuptools.packages.find]
 where = ["src"]

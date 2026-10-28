@@ -1,0 +1,2 @@
+lidar_path,lidar_timestamp_ns,lidar_frame_id,camera_path,camera_timestamp_ns,camera_frame_id
+synthetic_cloud.csv,1000000000,demo_ground,synthetic_camera.ppm,1010000000,demo_camera_optical

@@ -45,3 +45,7 @@ Failures and next experiment:
 ```
 
 Do not treat synthetic data as an evaluation set. Start with hand-reviewed real frames and expand coverage before making general performance claims.
+
+## Implemented paired ingestion
+
+`examples/paired_manifest.csv` is the executable paired-input format. It requires `lidar_path,lidar_timestamp_ns,lidar_frame_id,camera_path,camera_timestamp_ns,camera_frame_id`. Paths resolve relative to that manifest. The older `examples/manifest.csv` is a planning index and is not an ingestion input. Use `python3 -m kart_perception.ingest` to read recorded XYZ CSV and camera image pairs. No calibration or detection occurs during ingestion.

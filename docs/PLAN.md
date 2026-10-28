@@ -53,3 +53,7 @@ For runtime, report sample count, warm-up policy, p50/p95/p99 processing and fra
 - NVIDIA TensorRT benchmarking distinguishes end-to-end and in-engine performance: https://docs.nvidia.com/deeplearning/tensorrt/latest/performance/benchmarking.html
 
 These references support interface and measurement choices; they do not establish this project's accuracy or timing.
+
+## Ingestion progress
+
+Recorded-file ingestion now supports LiDAR XYZ CSV, decoded RGB camera images, and manifest-based paired replay with independent acquisition timestamps, frame IDs, and an explicit skew limit. Synthetic paired playback is available. Native recording adapters, live devices, synchronization estimation, calibration, camera inference, and fusion remain future work.
